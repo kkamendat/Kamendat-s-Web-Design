@@ -1,0 +1,362 @@
+/* ------------------ RESET ------------------ */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ------------------ BODY ------------------ */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #fefce8;
+    color: #1f2933;
+}
+
+/* ------------------ HEADER ------------------ */
+header {
+    text-align: center;
+    padding: 30px 20px;
+    background: white;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+header h1 {
+    font-size: 32px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: #f472b6; /* make full site name pink */
+}
+
+/* ------------------ NAVIGATION ------------------ */
+nav {
+    margin-top: 15px;
+}
+
+nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #1f2933;
+    font-weight: 500;
+    padding: 8px 14px;
+    border-radius: 8px;
+    transition: all 0.2s ease;
+}
+
+nav a:hover {
+    background: #f472b6;
+    color: white;
+}
+
+/* ------------------ HERO ------------------ */
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+    background: linear-gradient(135deg, #38bdf8, #f472b6);
+    color: white;
+}
+
+.hero h2 {
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    max-width: 600px;
+    margin: 0 auto 25px;
+    font-size: 18px;
+}
+
+.hero button {
+    padding: 12px 24px;
+    border: none;
+    background: #facc15;
+    color: #1f2933;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.hero button:hover {
+    transform: scale(1.05);
+    background: #fde047;
+}
+
+/* ------------------ SECTIONS ------------------ */
+section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+h2 {
+    margin-bottom: 20px;
+    font-size: 28px;
+}
+
+/* ------------------ CARDS (GENERAL) ------------------ */
+.card {
+    display: inline-block;
+    background: white;
+    padding: 25px;
+    margin: 15px;
+    border-radius: 15px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+    transition: all 0.2s ease;
+    width: 220px;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+/* ------------------ ABOUT ME CARDS ------------------ */
+.about-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.about-cards .card {
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+    width: 280px;
+    transition: transform 0.2s ease;
+    text-align: left;
+}
+
+.about-cards .card h3 {
+    margin-bottom: 10px;
+    color: #f472b6;
+}
+
+.about-cards .card p {
+    color: #1f2933;
+    line-height: 1.5;
+    font-size: 15px;
+}
+
+.about-cards .card:hover {
+    transform: translateY(-5px);
+}
+
+/* ------------------ SERVICE CARDS ------------------ */
+.service-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.service-cards .card {
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+    width: 280px;
+    transition: transform 0.2s ease;
+    text-align: left;
+}
+
+.service-cards .card h3 {
+    margin-bottom: 10px;
+    color: #38bdf8;
+}
+
+.service-cards .card p {
+    color: #1f2933;
+    line-height: 1.5;
+    font-size: 15px;
+}
+
+.service-cards .card:hover {
+    transform: translateY(-5px);
+}
+
+/* ------------------ CONTACT SECTION ------------------ */
+.contact {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.contact p {
+    font-size: 16px;
+    margin-bottom: 15px;
+    color: #1f2933;
+}
+
+/* ------------------ CONTACT CARD ------------------ */
+.contact-card {
+    display: inline-block;
+    background: white;
+    padding: 25px 30px;
+    border-radius: 15px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+    max-width: 320px;
+    margin: 0 auto;
+    text-align: center;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.contact-card h3 {
+    margin-bottom: 10px;
+    font-size: 24px;
+    color: #f472b6;
+}
+
+.contact-card p {
+    margin: 8px 0;
+    font-size: 16px;
+    color: #1f2933;
+}
+
+.contact-card a {
+    color: #38bdf8;
+    text-decoration: none; /* remove underline */
+    transition: color 0.2s ease;
+}
+
+.contact-card a:hover {
+    color: #0ea5e9;
+}
+
+.contact-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.15);
+}
+
+/* ------------------ PRICING ------------------ */
+.pricing {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.pricing-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.pricing-cards .card {
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+    width: 280px;
+    transition: transform 0.2s ease;
+}
+
+.pricing-cards .card h3 {
+    margin-bottom: 10px;
+    color: #f472b6;
+}
+
+.pricing-cards .card p {
+    color: #1f2933;
+    line-height: 1.5;
+    font-size: 15px;
+}
+
+.pricing-cards .card:hover {
+    transform: translateY(-5px);
+}
+
+/* ------------------ PORTFOLIO ------------------ */
+.portfolio {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.portfolio p {
+    margin-top: 10px;
+    color: #1f2933;
+}
+
+.portfolio-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.portfolio-cards .card {
+    background: white;
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+    width: 280px;
+    transition: transform 0.2s ease;
+    text-align: left;
+}
+
+.portfolio-cards .card img {
+    width: 100%;
+    border-radius: 12px;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease;
+}
+
+.portfolio-cards .card h3 {
+    margin-bottom: 8px;
+    color: #f472b6;
+}
+
+.portfolio-cards .card p {
+    font-size: 14px;
+    line-height: 1.4;
+    color: #1f2933;
+}
+
+.portfolio-cards .card a {
+    text-decoration: none; /* remove underlines */
+    color: inherit; /* keep same color */
+}
+
+.portfolio-cards .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.15);
+}
+
+.portfolio-cards .card:hover img {
+    transform: scale(1.05);
+}
+
+.tag {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 5px 10px;
+    background: #38bdf8;
+    color: white;
+    border-radius: 20px;
+    font-size: 12px;
+}
+
+/* ------------------ FOOTER ------------------ */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: white;
+    margin-top: 40px;
+    font-size: 14px;
+}
+
+footer p {
+    margin: 0;
+    text-align: center;
+}
+
+/* ------------------ GLOBAL LINK STYLE ------------------ */
+a {
+    text-decoration: none; /* remove underlines globally */
+}
+
+a:hover {
+    color: #38bdf8;
+}

@@ -24,7 +24,7 @@ header h1 {
     font-size: 32px;
     font-weight: 600;
     letter-spacing: 1px;
-    color: #f472b6; /* make full site name pink */
+    color: #f472b6;
 }
 
 /* ------------------ NAVIGATION ------------------ */
@@ -66,7 +66,9 @@ nav a:hover {
     font-size: 18px;
 }
 
-.hero button {
+/* GET STARTED EMAIL BUTTON */
+.hero-button {
+    display: inline-block;
     padding: 12px 24px;
     border: none;
     background: #facc15;
@@ -75,11 +77,13 @@ nav a:hover {
     border-radius: 8px;
     cursor: pointer;
     transition: all 0.2s ease;
+    text-decoration: none;
 }
 
-.hero button:hover {
+.hero-button:hover {
     transform: scale(1.05);
     background: #fde047;
+    color: #1f2933;
 }
 
 /* ------------------ SECTIONS ------------------ */
@@ -216,7 +220,7 @@ h2 {
 
 .contact-card a {
     color: #38bdf8;
-    text-decoration: none; /* remove underline */
+    text-decoration: none;
     transition: color 0.2s ease;
 }
 
@@ -315,8 +319,8 @@ h2 {
 }
 
 .portfolio-cards .card a {
-    text-decoration: none; /* remove underlines */
-    color: inherit; /* keep same color */
+    text-decoration: none;
+    color: inherit;
 }
 
 .portfolio-cards .card:hover {
@@ -354,7 +358,7 @@ footer p {
 
 /* ------------------ GLOBAL LINK STYLE ------------------ */
 a {
-    text-decoration: none; /* remove underlines globally */
+    text-decoration: none;
 }
 
 a:hover {
